@@ -18,8 +18,16 @@ struct ContentView: View {
             Text("Hello, World!")
         }
         .alert(isPresented: $showAlert) {
-            Alert(title: Text("Alert"),
-                  message: Text("My alert message!"))
+            
+            let cancelButton = Alert.Button.cancel()
+            let defaultButton = Alert.Button.default(Text("Print")) {
+                print("Default")
+            }
+            
+            return Alert(title: Text("Alert"),
+                  message: Text("My alert message!"),
+                primaryButton: cancelButton,
+                secondaryButton: defaultButton)
         }
     }
 }
