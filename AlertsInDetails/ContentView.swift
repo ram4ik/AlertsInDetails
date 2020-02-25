@@ -18,7 +18,8 @@ struct ContentView: View {
             Text("Hello, World!")
         }
         .alert(isPresented: $showAlert) {
-            Alert(title: Text("Alert"))
+            Alert(title: Text("Alert"),
+                  message: Text("My alert message!"))
         }
     }
 }
