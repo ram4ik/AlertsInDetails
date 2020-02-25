@@ -23,11 +23,12 @@ struct ContentView: View {
             let defaultButton = Alert.Button.default(Text("Print")) {
                 print("Default")
             }
+            let destructiveButton = Alert.Button.destructive(Text("Destructive"))
             
             return Alert(title: Text("Alert"),
                   message: Text("My alert message!"),
                 primaryButton: cancelButton,
-                secondaryButton: defaultButton)
+                secondaryButton: destructiveButton)
         }
     }
 }
