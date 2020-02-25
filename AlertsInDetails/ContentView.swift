@@ -29,6 +29,10 @@ struct ContentView: View {
                   message: Text("My alert message!"),
                 primaryButton: cancelButton,
                 secondaryButton: destructiveButton)
+            
+//            return Alert(title: Text("Alert"),
+//                         message: Text("My alert message!"),
+//                         dismissButton: defaultButton)
         }
     }
 }
